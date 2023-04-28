@@ -1,4 +1,12 @@
+import { useState } from "react";
+import Navbar from "./components/Navbar";
 const App = () => {
-  return <h2>Navbar Starter</h2>;
+  const [showLinks, setShowLinks] = useState(true);
+  return (
+    <main>
+      {showLinks}
+      <Navbar></Navbar>
+    </main>
+  );
 };
 export default App;
